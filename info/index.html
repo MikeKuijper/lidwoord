@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/favicon.png" />
+
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+
+  <title>Lidwoord voorspellen</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    h {
+      font-family: Abel;
+    }
+
+    p,
+    a {
+      font-family: Abel;
+    }
+
+    .container {
+      /* height: 100%; */
+      position: relative;
+      /* border: 3px solid green */
+      text-align: center;
+    }
+
+    .center {
+      margin: 0;
+      /* position: absolute; */
+      /* top: 50%; */
+      /* left: 50%; */
+      /* -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); */
+      margin-left: 25vw;
+      width: 50%;
+      text-align: center;
+    }
+
+    input[type=text] {}
+
+    .validInput {
+      padding: 5px;
+      border: 2px solid #ccc;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      font-size: 32px;
+      font-family: Abel;
+      color: black;
+      width: 80%;
+    }
+
+    .invalidInput {
+      color: red;
+    }
+
+    input[type=text]:focus {
+      border-color: #333;
+    }
+
+    @font-face {
+      font-family: Abel;
+      src: url('../assets/Abel-Regular.ttf');
+    }
+  </style>
+</head>
+
+<body style="background: white; height: 100%; overflow:auto;">
+  <div class="container">
+    <div class="center" style="margin-top: 10vh; margin-bottom: 10vh; ">
+      <h style="font-size: 48px;">Hoe het werkt</h><br>
+
+      <p style="font-size: 20px;">
+        Voor het voorspellen van lidwoorden bij Nederlandse zelfstandige naamwoorden, is een speciale technologie nodig,
+        die nog niet door de meeste mensen begrepen wordt: Neural Networks en Machine Learning. Een neuraal netwerk is,
+        zoals de naam suggereert, een netwerk van kunstmatige hersencellen. Machine Learning is een naam voor het
+        concept dat computers 'taken' leren doen, zonder dat ze expliciet verteld wordt wat ze precies moeten doen. Deze
+        techonologie is ontstaan na uitgebreid
+        onderzoek naar menselijke hersenen en bestaat al jaren.
+        <br><br>
+        <h style="font-size: 24px;">Neural Networks (NN)</h>
+        <br>
+        De beste manier om naar een NN te kijken, is als een hele lange wiskundige formule met duizenden variabelen.
+        Deze formule wordt vervolgens 'getraind' om bij gegeven input een gevraagd resultaat te geven. Voor dit trainen
+        is veel data en veel verwerkingstijd nodig. Computers staan weken lang getallen te verwerken om uiteindelijk een
+        bestandje te produceren dat op te slaan is in een paar MB. Dit bestand bevat de waarden in die hele lange
+        wiskundige formule, om van de gevraagde input te komen naar het gewilde antwoord.
+        <br><br>
+        <h style="font-size: 24px;">Mijn onderzoek</h>
+        <br>
+        Voor mijn onderzoek heb ik zelf een <a href="../data/data.json" style='color: green;'>lijst</a> gemaakt met
+        meer dan 500 zelfstandige
+        naamwoorden en hun bijbehorende lidwoord; het is echt monnikenwerk, dus ik raad het niet aan.
+        Vervolgens worden al
+        die woorden omgerekend tot getallen; Wiskundige formules kunnen immers geen letters of woorden begrijpen, zonder
+        dat ze er een getal aan kunnen binden. Mijn computer heeft vervolgens zo'n 60 uur lang de data
+        verwerkt en het resulterende NN gegenereerd.
+        <br><br>
+        <h style="font-size: 24px;">Extra informatie</h>
+        <br>
+        Voor het geval dat ik je nu heel enthousiast heb gemaakt en je meer wilt weten over kunstmatige intelligentie,
+        staan hieronder een aantal hele handige websites die mij flink hebben geholpen bij mijn onderzoek.
+        <br>
+        <br>
+
+        <a href="https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi"
+          style='color: green;'>3Blue1Brown
+          YouTube serie over Neural Networks</a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=R9OHn5ZF4Uo" style='color: green;'>How Machines Learn - CGP Grey</a>
+        <br>
+        <a href="https://towardsdatascience.com/understanding-backpropagation-algorithm-7bb3aa2f95fd"
+          style='color: green;'>Understanding Backpropagation Algorithm - Simeon Kostadinov</a>
+        <br>
+        <a href="https://brilliant.org/wiki/backpropagation/" style='color: green;'>Backpropagation - brilliant.org</a>
+      </p>
+    </div>
+
+    <a style="position: fixed; bottom: 36px; left: 14px; font-size: 24px; color: #ccc"
+      href="http://github.com/mikekuijper">Mike Kuijper</a>
+    <h style="position: fixed; bottom: 14px; left: 14px; font-size: 18px; color: #ccc">Mei 2020</h>
+    <h style="position: fixed; top: 14px; right: 14px; font-size: 18px; color: #ccc">v1.2</h>
+    <a style="position: fixed; bottom: 14px; right: 14px; font-size: 24px; color: #ccc" href="../">Terug</a>
+
+    <!-- <a style="position: absolute; bottom: 14px; right: 14px; font-size: 24px; color: #ccc" href="/">Info</a> -->
+</body>
+
+</html>

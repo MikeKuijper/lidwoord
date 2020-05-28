@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/favicon.png" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+  <script src="libraries/gpu-browser.min.js"></script>
+  <script src="libraries/marvin_other.js"></script>
+  <script src="libraries/p5.js"></script>
+  <script src="script.js"></script>
+  <title>Lidwoord voorspellen</title>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+  <style>
+    html {
+      height: 100%;
+    }
+
+    h {
+      font-family: Abel;
+    }
+
+    a {
+      font-family: Abel;
+    }
+
+    .container {
+      height: 100%;
+      position: relative;
+      /* border: 3px solid green */
+    }
+
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 60%;
+      text-align: center;
+    }
+
+    input[type=text] {}
+
+    .validInput {
+      padding: 5px;
+      border: 2px solid #ccc;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      font-size: 32px;
+      font-family: Abel;
+      color: black;
+      width: 100%;
+      max-width: 500px;
+
+      margin: 0px;
+    }
+
+    .invalidInput {
+      color: red;
+    }
+
+    input[type=text]:focus {
+      border-color: #333;
+    }
+
+    @font-face {
+      font-family: Abel;
+      src: url('./assets/Abel-Regular.ttf');
+    }
+  </style>
+</head>
+
+<body style="background: white; height: 100%">
+  <div class="container">
+    <div class="center">
+      <h style="font-size: 48px;">Vul een woord in</h><br>
+      <input type="text" class="validInput" id="input" oninput="validateInput()" onsubmit="submit()" maxlength="12" />
+      <span style="position: relative;">
+        <span id="chars"
+          style="font-family: Abel; margin-left: -48px; font-size: 32px; width: 64px; color: rgba(0, 0, 0, 0.4); text-align: right; user-select: none;">
+          12
+        </span>
+      </span>
+
+      <!-- <br><button onclick="clearInterval(interval)">STOP</button> -->
+
+      <div style="margin-top: 64px;">
+        <h id="outputText" style="font-size: 32px;"> </h>
+      </div>
+    </div>
+    <a style="position: fixed; bottom: 36px; left: 14px; font-size: 24px; color: #ccc"
+      href="http://github.com/mikekuijper">Mike Kuijper</a>
+    <h style="position: fixed; bottom: 14px; left: 14px; font-size: 18px; color: #ccc">Mei 2020</h>
+    <h style="position: fixed; top: 14px; right: 14px; font-size: 18px; color: #ccc">v1.2</h>
+    <a style="position: fixed; bottom: 14px; right: 14px; font-size: 24px; color: #ccc" href="./info">Informatie</a>
+    <!-- <a style="position: absolute; bottom: 14px; right: 14px; font-size: 24px; color: #ccc" href="/">Info</a> -->
+  </div>
+</body>
+
+</html>

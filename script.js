@@ -65,7 +65,7 @@ function submit() {
 
     if (checkInput() == true && input.value.length > 0) {
         let output = brain.feed(tokenizeWord(input.value))[0] * 100;
-        outputText.innerHTML = (output >= 50) ? `het ${input.value} (${Math.round(output)}%)` : `de ${input.value} (${100 - Math.round(output)}%)`;
+        outputText.innerHTML = (output >= 50) ? `het ${input.value.toLowerCase()} (${Math.round(output)}%)` : `de ${input.value.toLowerCase()} (${100 - Math.round(output)}%)`;
         outputText.style.color = "rgb(0, 0, 0)";
     } else if (input.value.length == 0) {
         outputText.innerHTML = "Tja, dan moet je wel wat invullen";
